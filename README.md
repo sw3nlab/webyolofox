@@ -24,9 +24,9 @@ Luckfox pico max object detection and counting solution
   ...
 </details>
   
-предварительно обученую модель `yolov5.onnx` сконвертированую в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов, которые указаны в файле koko_80_lable_listlist.
+- предварительно обученую модель `yolov5.onnx` сконвертированую в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов, которые указаны в файле koko_80_lable_listlist.
 
-и самую дешёвую noname web-камеру  
+- самую дешёвую noname web-камеру
 
 ### Buildroot firmware
 - Linux Ядро версии 5.10.160 
