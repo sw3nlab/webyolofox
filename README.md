@@ -6,8 +6,10 @@ Luckfox pico max object detection and counting solution
 В данном примере я использовал: 
 - плату <b>LuckFox Pico Max с процессором RV1106</b>
 <details>
-  <summary>USB Хаб с питанием, картридером и несколькими USB портами для расширения возможностей LuckFox Pico</summary>
+  <summary>USB Хаб с питанием, картридером и несколькими USB портами для расширения возможностей подключения периферийных устройств к LuckFox Pico</summary>
   как то так...
+  
+  ВНИМАНИЕ! в конфигураторе `luckfox-config` необходимо назначить режим работы USB -> <b>Host</b>
   
   ![IMAGE](https://github.com/sw3nlab/webyolofox/blob/main/images/tools.jpg)
   
