@@ -1,4 +1,4 @@
-echo "Stop YOLO..."
+echo "Stop Detector.."
 yolo=$(ps |grep yolo.sh|awk '{print $1}')
 echo $yolo
 kill -9 $yolo
