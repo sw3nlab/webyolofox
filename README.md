@@ -66,7 +66,7 @@ cd webyolofox/remote
 
 Для остановки используется `./stop_remote.sh`
 
-### Подсчёт объектов в кадре
+### CLI Подсчёт объектов в кадре
 Для подсчёта объектов используется `./detector.sh` который принимает 2 аргумента, адрес анализируемого изображения `image.jpg` и объект поиска `car`,`person` и т.д. 
 
 ![screen](https://github.com/sw3nlab/webyolofox/blob/main/images/screen.jpg)
