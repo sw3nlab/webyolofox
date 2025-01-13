@@ -29,19 +29,17 @@ Luckfox pico max object detection and counting solution
 - самую дешёвую noname web-камеру
 
 ### Buildroot firmware
+Готовый скомпилированый вариант прошивки можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) выбрав Buildroot для загрузки из Flash или SD карты
 - Linux Ядро версии 5.10.160
 - для работы с web-камерой подключеной к LuckFox через USB хаб я использую утилиту <b>fswebcam</b>
 - для получения изображений с удалённых камер под управлением OpenIPC потребуется утилита <b>wget</b> (в таком случае Frame Rate детектирования будет ниже за счёт времени запроса к удалённому серверу) 
-
-Готовый скомпилированый вариант прошивки можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) выбрав Buildroot для загрузки из Flash или SD карты
-
-Для самостоятельной сборки прошивки необходимо использовать [Luckfox SDK](https://github.com/LuckfoxTECH/luckfox-pico)
+  для самостоятельной сборки прошивки необходимо использовать [Luckfox SDK](https://github.com/LuckfoxTECH/luckfox-pico)
 
 
 ### Сборка Web-сервера
 В данном примере используется [Tiny Web Server](https://github.com/shenfeng/tiny-web-server)
-Для его сборки потребуется кросс-компилятор из SDK Rockchip
-или можно воспользоваться нашим бинарником в директории в `webserver`
+Для его сборки потребуется кросс-компилятор из SDK Luckfox
+В этом репозитории в директории `webserver` находится уже собраный бинарник данного Web-сервера
 
 ### Запуск детектора с подключеной через USB-хаб web-камерой
 Убедится что камера подключена и она нормально определяется системой `lsusb`,`lshw`,`dmesg`
@@ -52,17 +50,20 @@ cd webyolofox
 ```
 Затем открыть адрес вашей платы `192.168.x.x:8080/index.html`
 
-Frame Rate ~1 кадр в секунду.
+Частота обновления изображения (Frame Rate) ~1 кадр в секунду.
 
 Вызов `./stop.sh` последовательно остановит демонов `tiny` и `fswebcam` тем самым завершив процессы детектора.
 
 ### Запуск детектора на изображение с удалённой web-камеры
-Проверить доступность своей камеры по http и указать её адрес в файле `webyolofox/remote/yolo.sh`
 ```bash
 git clone https://github.com/sw3nlab/webyolofox
 cd webyolofox/remote
-./start_remote.sh
 ```
+Проверить доступность своей камеры по http и указать её адрес в файле `webyolofox/remote/yolo.sh`
+Затем стартануть демон
+`./start_remote.sh`
+
+Частота обновления 1 раз в 4 секунды.
 
 ### Подсчёт объектов в кадре
 Для подсчёта объектов я использовал утилиты `grep` и `wc`
