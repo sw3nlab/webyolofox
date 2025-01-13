@@ -5,7 +5,7 @@ Luckfox pico max object detection and counting solution
 ### Принцип работы
 
 В данном примере я использовал: 
-- плату <b>LuckFox Pico Max с процессором RV1106</b>
+- плату <b>LuckFox Pico Max с процессором Rockchip RV1106 на архитектуре armhf </b>
 <details>
   <summary>USB Хаб с питанием, картридером и несколькими USB портами для расширения возможностей подключения периферийных устройств к LuckFox Pico</summary>
   как то так...
