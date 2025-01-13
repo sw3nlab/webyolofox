@@ -1,7 +1,9 @@
 # webyolofox
 Luckfox pico max object detection and counting solution
 <center> 
+  
   ![YOLOv15](https://github.com/sw3nlab/webyolofox/blob/main/images/detect.gif)
+
 </center>
 ### Принцип работы
 В данном примере я использовал: 
