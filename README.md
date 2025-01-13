@@ -69,3 +69,4 @@ cd webyolofox
 
 ![screen](https://github.com/sw3nlab/webyolofox/blob/main/images/screen.jpg)
 
+Если результат выполнения возвращает 0 , то объект `car` на изображении `image.jpg` отсутствует.
