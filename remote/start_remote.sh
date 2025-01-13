@@ -5,6 +5,6 @@ echo "Started on http://localhost:8080/"
 sleep 1
 echo "Starting REMOTE detector..."
 sleep 1
-/var/www/yolov5/yolo.sh >/dev/null&
+./yolo.sh >/dev/null&
 sleep 1
 echo "Remote Detector started..."
