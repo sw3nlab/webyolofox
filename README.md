@@ -14,22 +14,28 @@ Luckfox pico max object detection and counting solution
 </details>
   
 предварительно обученую модель `yolov5.onnx` сконвертированую в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов, которые указаны в файле KOKO.
-- На `LuckFox Pico Max` необходимо собрать или загрузить прошивку <b>Buildroot</b>
-- Собрать простой webserver 
-- Подключить Web-камеру
+
+и дешёвую noname web-камеру  
+
+### Buildroot firmware
+Linux Ядро версии 5.10.160 
+для получения изображений с удалённых камер под управлением OpenIPC потребуется утилита <b>wget</b> (в таком случае Frame Rate детектирования будет ниже за счёт времени запроса к удалённому серверу) 
+для работы с web-камерой <b>fswebcam</b> (Frame Rate ~1 FPS)
+Готовый скомпилированый вариант прошивки можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) выбрав Buildroot для загрузки из Flash или SD карты
+Для самостоятельной сборки прошивки необходимо использовать [Luckfox SDK](https://github.com/LuckfoxTECH/luckfox-pico)
 
 
-1) Buildroot firmware
-Готовый скомпилированый вариант прошивки можно взять из официального репозитория LuckFox тут
-Для самостоятельной сборки прошивки представлен SDK
-
-
-3) Сборка Web-сервера
-В данном примере используется Tiny Web Server [Tiny Web Server](https://github.com/shenfeng/tiny-web-server)
+### Сборка Web-сервера
+В данном примере используется [Tiny Web Server](https://github.com/shenfeng/tiny-web-server)
 Для его сборки потребуется кросс-компилятор из SDK Rockchip
-или можно воспользоваться собраным нами в директории в 
+или можно воспользоваться нашим бинарником в директории в `webserver`
 
-3)Залить файлы из этого репозитория и запустить файл.`/start.sh`
+Для запуска 
+Залить файлы из этого репозитория и запустить файл.`/start.sh` затем открыть адрес вашей платы `192.168.x.x:8080/index.html`
+
+Frame Rate ~1 кадр в секунду.
+
+
 
 
 
