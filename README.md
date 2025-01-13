@@ -43,7 +43,13 @@ Luckfox pico max object detection and counting solution
 Для его сборки потребуется кросс-компилятор из SDK Rockchip
 или можно воспользоваться нашим бинарником в директории в `webserver`
 
-Для запуска детектора
+#Запуск детектора
+Убедится что к вашей плате luckfox подключена камера и она определяется `lsusb`,`lshw`,`dmesg`
+```bash
+git clone https://github.com/sw3nlab/webyolofox
+cd webyolofox
+./start.sh
+```
 Залить файлы из этого репозитория и запустить файл.`/start.sh` затем открыть адрес вашей платы `192.168.x.x:8080/index.html`
 
 Frame Rate ~1 кадр в секунду.
