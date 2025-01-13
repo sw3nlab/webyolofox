@@ -1,8 +1,6 @@
 # webyolofox
 Luckfox pico max object detection and counting solution
-
 ![YOLOv15](https://github.com/sw3nlab/webyolofox/blob/main/images/detect.gif)
-
 ### Принцип работы
 В данном примере я использовал: 
 - плату <b>LuckFox Pico Max с процессором RV1106 и NPU 1TOPs</b>
