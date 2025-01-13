@@ -1,0 +1,14 @@
+<html>
+<head><title>Detector Out</title>
+<meta http-equiv="Pragma" content="no-cache">
+<script>
+setInterval(function() {
+    var myImageElement = document.getElementById('myImage');
+    myImageElement.src = 'out.png?rand=' + Math.random();}, 5000);
+</script>
+</head>
+<center>
+<img src="out.png" id="myImage" />
+</center>
+
+</html>
