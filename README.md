@@ -57,9 +57,10 @@ Frame Rate ~1 кадр в секунду.
 Вызов `./stop.sh` последовательно остановит демонов `tiny` и `fswebcam` тем самым завершив процессы детектора.
 
 ### Запуск детектора на изображение с удалённой web-камеры
+Проверить доступность своей камеры по http и указать её адрес в файле `webyolofox/remote/yolo.sh`
 ```bash
 git clone https://github.com/sw3nlab/webyolofox
-cd webyolofox
+cd webyolofox/remote
 ./start_remote.sh
 ```
 
