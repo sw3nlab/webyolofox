@@ -40,11 +40,31 @@ Luckfox pico max object detection and counting solution
 Для его сборки потребуется кросс-компилятор из SDK Luckfox
 В этом репозитории в директории `webserver` находится уже собраный бинарник данного Web-сервера
 
+### Запуск детектора на изображение с удалённой web-камеры
+```bash
+git clone https://github.com/sw3nlab/webyolofox
+cd webyolofox/
+chmod a+x install.sh
+./install.sh
+cd remote/
+```
+Проверить доступность своей камеры по http и указать её адрес в файле `webyolofox/remote/yolo.sh`
+Затем стартануть демон
+`./start_remote.sh`
+
+и открыть адрес вашей платы `192.168.x.x:8080/index.html`
+
+> Частота обновления 1 кадр в 5 секунд.
+
+Для остановки используется `./stop_remote.sh`
+
 ### Запуск детектора с подключеной через USB-хаб web-камерой
 Убедится что камера подключена и она нормально определяется системой `lsusb`,`lshw`,`dmesg`
 ```bash
 git clone https://github.com/sw3nlab/webyolofox
-cd webyolofox
+cd webyolofox/
+chmod a+x install.sh
+./install.sh
 ./start.sh
 ```
 Затем открыть адрес вашей платы `192.168.x.x:8080/index.html`
@@ -52,19 +72,6 @@ cd webyolofox
 > Частота обновления изображения (Frame Rate) ~1 кадр в секунду.
 
 Вызов `./stop.sh` последовательно остановит процессы демонов `tiny` и `fswebcam` тем самым завершив работу детектора.
-
-### Запуск детектора на изображение с удалённой web-камеры
-```bash
-git clone https://github.com/sw3nlab/webyolofox
-cd webyolofox/remote
-```
-Проверить доступность своей камеры по http и указать её адрес в файле `webyolofox/remote/yolo.sh`
-Затем стартануть демон
-`./start_remote.sh`
-
-> Частота обновления 1 кадр в 5 секунд.
-
-Для остановки используется `./stop_remote.sh`
 
 ### CLI Подсчёт объектов в кадре
 Для подсчёта объектов используется `./detector.sh` который принимает 2 аргумента, адрес анализируемого изображения `image.jpg` и объект поиска `car`,`person` и т.д. 
