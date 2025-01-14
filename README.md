@@ -16,8 +16,6 @@ Luckfox pico max object detection and counting solution
   <summary>USB Хаб с питанием, картридером и несколькими USB портами для возможности подключения периферийных устройств к LuckFox Pico</summary>
   как то так...
   
-  ВНИМАНИЕ! в конфигураторе `luckfox-config` необходимо назначить режим работы USB -> <b>Host</b>
-  
   ![IMAGE](https://github.com/sw3nlab/webyolofox/blob/main/images/tools.jpg)
   
   ...
@@ -62,7 +60,9 @@ cd remote/
 Для остановки используется `./stop_remote.sh`
 
 ### Запуск детектора с подключеной через USB-хаб web-камерой
+ВНИМАНИЕ! в конфигураторе `luckfox-config` необходимо назначить режим работы USB -> <b>Host</b>
 Убедится что камера подключена и она нормально определяется системой `lsusb`,`lshw`,`dmesg`
+далее...
 ```bash
 git clone https://github.com/sw3nlab/webyolofox
 cd webyolofox/
