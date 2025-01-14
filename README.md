@@ -5,7 +5,7 @@ Luckfox pico max object detection and counting solution
 
 ### В данном примере используются: 
 <details>
-  <summary>плату <b>LuckFox Pico Max с процессором Rockchip RV1106</b> на архитектуре armhf</summary>
+  <summary>плата <b>LuckFox Pico Max с процессором Rockchip RV1106</b> на архитектуре armhf</summary>
 ...
 123
 ...
@@ -23,9 +23,9 @@ Luckfox pico max object detection and counting solution
   ...
 </details>
   
-- предварительно обученую модель `yolov5.onnx` сконвертированую в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов, которые указаны в файле koko_80_lable_listlist.
+- предварительно обученая модель `yolov5.onnx` сконвертированная в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов, которые указаны в файле koko_80_lable_listlist.
 
-- самую дешёвую noname web-камеру
+- самая дешманская noname USB web-камера `0c45:6366`
 
 ### Buildroot firmware
 Готовый скомпилированый вариант прошивки можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) выбрав Buildroot для загрузки из Flash или SD карты
