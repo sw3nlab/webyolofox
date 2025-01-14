@@ -42,8 +42,9 @@ Luckfox pico max object detection and counting solution
 Если вы хотите использовать другой веб-сервер, вы можете собрать его сами, для этого вам потребуется кросс-компилятор из SDK Luckfox.
 
 ### [WEB] Запуск детектора на изображение с удалённой web-камеры
+для данного варианта менять режим работы USB не требуется.
 ```bash
-git clone https://github.com/sw3nlab/webyolofox
+unzip webyolofox.zip
 cd webyolofox/
 chmod a+x install.sh
 ./install.sh
@@ -60,14 +61,15 @@ cd remote/
 Для остановки используется `./stop_remote.sh`
 
 ### [WEB] Запуск детектора с подключеной через USB-хаб web-камерой
-ВНИМАНИЕ! в конфигураторе `luckfox-config` необходимо назначить режим работы USB -> <b>Host</b>
-Убедится что камера подключена и она нормально определяется системой `lsusb`,`lshw`,`dmesg`
-далее...
+
 ```bash
-#в пункте Advanced Option выбрать режим работы USB ->host
+luckfox-config
+#в конфигураторе перейти в Advanced Option выбрать режим работы USB ->host
 reboot
 ```
-после перезагрузки, скопировать и распаковать архив с webyolofox на плату
+после перезагрузки, убедится что камера подключена и определяется системой `lsusb`,`dmesg`
+далее...
+скопировать и распаковать архив с webyolofox на плату
 ```bash
 unzip webyolofox.zip
 cd webyolofox/
