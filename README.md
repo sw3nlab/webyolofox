@@ -3,9 +3,9 @@ Luckfox pico max object detection and counting solution
 
   ![YOLOv15](https://github.com/sw3nlab/webyolofox/blob/main/images/detect.gif)
 
-### В данном примере используются: 
+### В данном примере я использовал: 
 <details>
-  <summary>плата <b>LuckFox Pico Max с процессором Rockchip RV1106</b> на архитектуре armhf</summary>
+  <summary>плату <b>LuckFox Pico Max с процессором Rockchip RV1106</b> на архитектуре armhf</summary>
 ...
 123
 ...
@@ -23,20 +23,23 @@ Luckfox pico max object detection and counting solution
   ...
 </details>
   
-- предварительно обученая модель `yolov5.onnx` сконвертированная в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов, которые указаны в файле koko_80_lable_listlist.
+- предварительно обученую модель `yolov5.onnx` сконвертированную в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов, которые указаны в файле `webyolofox/model/koko_80_lable_listlist`.
 
-- самая дешманская noname USB web-камера `0c45:6366`
+- самую дешманскую noname USB web-камеру `0c45:6366` с низким разрешением
 
 ### Buildroot firmware
-Готовый скомпилированый вариант прошивки можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) выбрав Buildroot для загрузки из Flash или SD карты
+Готовый скомпилированый вариант прошивки от производителя можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) 
+выбрав Buildroot для загрузки из Flash или SD карты
+
+# о прошивке от производителя
 - Linux Ядро версии 5.10.160
-- для работы с web-камерой подключеной к LuckFox через USB хаб я использую утилиту <b>fswebcam</b>
-- для получения изображений с удалённых камер под управлением OpenIPC потребуются утилиты <b>wget</b> или <b>curl</b> (в таком случае Frame Rate детектирования будет ниже за счёт времени запроса к удалённому серверу) 
-- для самостоятельной сборки прошивки необходимо использовать [Luckfox SDK](https://github.com/LuckfoxTECH/luckfox-pico)
+- для работы с web-камерой подключеной к LuckFox через USB-хаб собрана утилита <b>fswebcam</b>
+- для получения изображений с удалённых камер (например под управлением [OpenIPC](https://github.com/OpenIPC) ) потребуются утилиты <b>wget</b> или <b>curl</b> (в таком случае Frame Rate детектирования будет ниже за счёт времени запроса к удалённому серверу) 
+- для самостоятельной сборки прошивки и/или её компонентов необходимо использовать [Luckfox SDK](https://github.com/LuckfoxTECH/luckfox-pico)
 
 
 ### Web-сервер
-Для данного решения я собрал [Tiny Web Server](https://github.com/shenfeng/tiny-web-server)
+Для данного решения мною собран [Tiny Web Server](https://github.com/shenfeng/tiny-web-server)
 в директории `webyolofox/webserver` вы найдёте уже собраный бинарник этого сервера.
 Если вы хотите использовать другой веб-сервер, вы можете собрать его сами, для этого вам потребуется кросс-компилятор из SDK Luckfox.
 
