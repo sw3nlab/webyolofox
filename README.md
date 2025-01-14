@@ -35,10 +35,10 @@ Luckfox pico max object detection and counting solution
 - для самостоятельной сборки прошивки необходимо использовать [Luckfox SDK](https://github.com/LuckfoxTECH/luckfox-pico)
 
 
-### Сборка Web-сервера
-В данном примере используется [Tiny Web Server](https://github.com/shenfeng/tiny-web-server)
-Для его сборки потребуется кросс-компилятор из SDK Luckfox
-В этом репозитории в директории `webserver` находится уже собраный бинарник данного Web-сервера
+### Web-сервер
+Для данного решения я собрал [Tiny Web Server](https://github.com/shenfeng/tiny-web-server)
+в директории `webyolofox/webserver` вы найдёте уже собраный бинарник этого сервера.
+Если вы хотите использовать другой веб-сервер, вы можете собрать его сами, для этого вам потребуется кросс-компилятор из SDK Luckfox.
 
 ### Запуск детектора на изображение с удалённой web-камеры
 ```bash
