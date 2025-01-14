@@ -7,7 +7,7 @@ Luckfox pico max object detection and counting solution
 <details>
   <summary>плату <b>LuckFox Pico Max с процессором Rockchip RV1106</b> на архитектуре armhf</summary>
 ...
-123
+возможно будет работать и на других платах этого семейства (пока не проверено)
 ...
 
 </details>
