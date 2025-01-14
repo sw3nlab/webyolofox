@@ -64,7 +64,12 @@ cd remote/
 Убедится что камера подключена и она нормально определяется системой `lsusb`,`lshw`,`dmesg`
 далее...
 ```bash
-git clone https://github.com/sw3nlab/webyolofox
+#в пункте Advanced Option выбрать режим работы USB ->host
+reboot
+```
+после перезагрузки, скопировать и распаковать архив с webyolofox на плату
+```bash
+unzip webyolofox.zip
 cd webyolofox/
 chmod a+x install.sh
 ./install.sh
