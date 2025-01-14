@@ -1,6 +1,6 @@
 echo "Install webyolofox... "
 echo "chmod files +"
-chmod a+x detect.sh start.sh stop.sh eye eye.sh webserver/tiny remote/eye remote/eye.sh remote/start_remote.sh remote/stop_remote.sh 
+chmod a+x fswebcam detect.sh start.sh stop.sh eye eye.sh webserver/tiny remote/eye remote/eye.sh remote/start_remote.sh remote/stop_remote.sh 
 echo "copy libs +"
 cp lib/libgd.so.3 lib/libpng16.so.16 lib/libfontconfig.so.1 lib/libjpeg.so.8 /usr/lib/.
 mv fswebcam /usr/sbin/.
