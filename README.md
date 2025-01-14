@@ -31,7 +31,7 @@ Luckfox pico max object detection and counting solution
 Готовый скомпилированый вариант прошивки от производителя можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) 
 выбрав Buildroot для загрузки из Flash или SD карты
 
-# о прошивке от производителя
+### о прошивке от производителя
 - Linux Ядро версии 5.10.160
 - для работы с web-камерой подключеной к LuckFox через USB-хаб собрана утилита <b>fswebcam</b>
 - для получения изображений с удалённых камер (например под управлением [OpenIPC](https://github.com/OpenIPC) ) потребуются утилиты <b>wget</b> или <b>curl</b> (в таком случае Frame Rate детектирования будет ниже за счёт времени запроса к удалённому серверу) 
