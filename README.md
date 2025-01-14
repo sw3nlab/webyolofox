@@ -49,7 +49,7 @@ chmod a+x install.sh
 ./install.sh
 cd remote/
 ```
-Проверить доступность своей камеры по http и указать её адрес в файле `webyolofox/remote/yolo.sh`
+Проверить доступность своей камеры по http и указать её адрес в файле `webyolofox/remote/eye.sh`
 Затем стартануть демон
 `./start_remote.sh`
 
