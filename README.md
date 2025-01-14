@@ -76,6 +76,6 @@ chmod a+x install.sh
 ### CLI Подсчёт объектов в кадре
 Для подсчёта объектов используется `./detector.sh` который принимает 2 аргумента, адрес анализируемого изображения `image.jpg` и объект поиска `car`,`person` и т.д. 
 
-![screen](https://github.com/sw3nlab/webyolofox/blob/main/images/screen.jpg)
+![screen](https://github.com/sw3nlab/webyolofox/blob/main/images/detect_screen.jpg)
 
 Если результат выполнения возвращает 0 , то объект на изображении отсутствует.
