@@ -27,7 +27,7 @@ Luckfox pico max object detection and counting solution
 
 ### Buildroot firmware
 Готовый скомпилированый вариант прошивки от производителя можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) 
-выбрав Buildroot для загрузки из Flash или SD карты
+выбрав Buildroot и вариант загрузки системы с SD карты
 
 ### о прошивке от производителя
 - Linux Ядро версии 5.10.160
