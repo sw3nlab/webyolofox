@@ -3,7 +3,7 @@ Luckfox pico max object detection and counting solution
 
   ![YOLOv15](https://github.com/sw3nlab/webyolofox/blob/main/images/detect.gif)
 
-### В данном примере я использовал: 
+### В данном примере используются: 
 <details>
   <summary>плату <b>LuckFox Pico Max с процессором Rockchip RV1106</b> на архитектуре armhf</summary>
 ...
