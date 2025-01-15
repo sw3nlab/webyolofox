@@ -60,7 +60,7 @@ cd remote/
 
 Для остановки используется `./stop_remote.sh`
 
-> * камеры с OpenIPC позволяют получать изображение в формате jpg обрезаные до нужного разрешения Например: http://192.168.1.10/image.jpg?width=640&height=480&qfactor=50&color2gray=1&crop=80x32x512x400
+> * камеры с OpenIPC позволяют получать изображение в формате jpg обрезаные до нужного разрешения Например: <i>192.168.x.x/image.jpg?width=640&height=480&qfactor=50&color2gray=1&crop=80x32x512x400</i>
 таким образом можно значительно оптимизировать поиск объектов в выделенной области.
 подробнее: https://openipc.org/majestic-endpoints?locale=ru
 
