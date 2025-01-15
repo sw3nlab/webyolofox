@@ -29,10 +29,9 @@ Luckfox pico max object detection and counting solution
 Готовый скомпилированый вариант прошивки от производителя можно взять из официального [wiki LuckFox](https://drive.google.com/drive/folders/1sFUWjYpDDisf92q9EwP1Ia7lHgp9PaFS?usp=drive_link) 
 выбрав Buildroot и вариант загрузки системы с SD карты
 
-### о прошивке от производителя
 - Linux Ядро версии 5.10.160
-- для работы с web-камерой подключеной к LuckFox через USB-хаб собрана утилита <b>fswebcam</b>
-- для получения изображений с удалённых камер (например под управлением [OpenIPC](https://github.com/OpenIPC) ) потребуются утилиты <b>wget</b> или <b>curl</b> (в таком случае Frame Rate детектирования будет ниже за счёт времени запроса к удалённому серверу) 
+- для работы с web-камерой подключеной к LuckFox через USB-хаб отдельно собрана утилита <b>fswebcam</b> (в прошивке её нет)
+- для получения изображений с удалённых камер (например под управлением [OpenIPC](https://github.com/OpenIPC) ) потребуются утилиты <b>wget</b> или <b>curl</b> (в таком случае Frame Rate детектирования будет ниже за счёт времени запроса к удалённому серверу) {curl в прошивке отсутствует}
 - для самостоятельной сборки прошивки и/или её компонентов необходимо использовать [Luckfox SDK](https://github.com/LuckfoxTECH/luckfox-pico)
 
 
@@ -60,9 +59,10 @@ cd remote/
 
 Для остановки используется `./stop_remote.sh`
 
-> * камеры с OpenIPC позволяют получать изображение в формате jpg обрезаные до нужного разрешения Например: <i>192.168.x.x/image.jpg?width=640&height=480&qfactor=50&color2gray=1&crop=80x32x512x400</i>
-таким образом можно значительно оптимизировать поиск объектов в выделенной области.
-подробнее: https://openipc.org/majestic-endpoints?locale=ru
+> <i>* камеры с OpenIPC позволяют получать изображение в формате jpg обрезаные до нужного разрешения Например: 192.168.x.x/image.jpg?width=640&height=480&qfactor=50&color2gray=1&crop=80x32x512x400
+> ![image](https://github.com/sw3nlab/webyolofox/blob/main/images/cups.jpg)
+> таким образом можно значительно оптимизировать поиск объектов, в заранее выделенной области, а не во всём изображении.
+подробнее: https://openipc.org/majestic-endpoints?locale=ru </i>
 
 ### [WEB] Запуск детектора с подключеной через USB-хаб web-камерой
 Сначала выполнить
