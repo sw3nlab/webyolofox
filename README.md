@@ -21,7 +21,7 @@ Luckfox pico max object detection and counting solution
   ...
 </details>
   
-- предварительно обученую модель `yolov5.onnx` сконвертированную в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов, которые указаны в файле `webyolofox/model/koko_80_lable_listlist`.
+- предварительно обученую модель `yolov5.onnx` сконвертированную в формат `yolov5.rknn` и возможностью детектирования 80 различных объектов.
 
 - самую дешманскую noname USB web-камеру `0c45:6366` с низким разрешением
 
@@ -89,7 +89,9 @@ chmod a+x install.sh
 Вызов `./stop.sh` последовательно остановит процессы демонов `tiny` и `fswebcam` тем самым завершив работу детектора.
 
 ### [CLI] Подсчёт объектов в кадре
-Для подсчёта объектов используется `webyolofox/detect.sh` который принимает 2 аргумента, адрес анализируемого изображения `image.jpg` и объект поиска `car`,`person` и т.д. 
+Для подсчёта объектов используется `webyolofox/detect.sh` который на вход принимает 2 аргумента, адрес анализируемого изображения `image.jpg` (внутри каталога) и объект поиска `car`,`person` и т.д. 
+
+Полный список доступных для детектирования объектов можно посмотреть в файле [webyolofox/model/coco_80_labels_list.txt](https://github.com/sw3nlab/webyolofox/blob/main/model/coco_80_labels_list.txt)
 
 ![screen](https://github.com/sw3nlab/webyolofox/blob/main/images/detect_screen.jpg)
 
