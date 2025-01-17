@@ -4,7 +4,7 @@ sleep 1
 echo "Web server starting..."
 webserver/tiny 8080 >/dev/null&
 sleep 1
-echo "Started on http://localhost:8080/"
+echo "Tiny Started on port 8080"
 sleep 1
 echo "Starting web-detector..."
 sleep 1
