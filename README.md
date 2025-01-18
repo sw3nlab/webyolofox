@@ -5,7 +5,7 @@ Luckfox pico max object detection and counting solution
 
 ### В данном примере я использовал: 
 <details>
-  <summary>плату <b>LuckFox Pico Max с процессором Rockchip RV1106G3 и NPU заявленой производительностью 1TOPS (триллион операций в секунду)</b></summary>
+  <summary>плату <b>LuckFox Pico Max с процессором Rockchip RV1106G3</b></summary>
 ...
 возможно будет работать и на других платах этого семейства (пока не проверено)
 ...
