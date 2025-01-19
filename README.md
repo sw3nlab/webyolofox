@@ -31,7 +31,7 @@ Luckfox pico max object detection and counting solution
 
 - Linux Ядро версии 5.10.160
 - для работы с web-камерой подключеной к LuckFox через USB-хаб, мною отдельно собрана утилита <b>fswebcam</b> (т.к. в оф.прошивке она отсутствует)
-- альтернативный вариант запуска детектора [без утилиты fswebcam](https://github.com/sw3nlab/webyolofox/blob/main/test.sh) с помощью v4l2-ctl
+- альтернативный вариант запуска детектора [без утилиты fswebcam](https://github.com/sw3nlab/webyolofox/blob/main/test.sh) с помощью <b>v4l2-ctl</b>
 - для получения изображений с удалённых камер (например под управлением [OpenIPC](https://github.com/OpenIPC) ) потребуются утилиты <b>wget</b> или <b>curl</b> (в таком случае Frame Rate детектирования будет ниже за счёт времени запроса к удалённому серверу) {curl в прошивке отсутствует}
 - для самостоятельной сборки прошивки и/или её компонентов необходимо использовать [Luckfox SDK](https://github.com/LuckfoxTECH/luckfox-pico)
 
